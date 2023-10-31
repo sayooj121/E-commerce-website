@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="about">
+      <div class="row no-gutters">
+        <div class="col-6">
+          <div class="about_img"></div>
+        </div>
+        <div class="col-6 no-gutters">
+          <div class="about_content"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+            <div class="col-12 first">
+                <p>This is a single column spanning the entire width.</p>
+            </div>
+        </div>
+
+         Second Row -->
+<!-- <div class="row s1">
+            <div class="col-6">
+                <p>This is the first column in the second row.</p>
+            </div>
+            <div class="col-6 s2">
+                <p>This is the second column in the second row.</p>
+            </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Viewer</title>
+    <style>
+      .image-container {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="portfolio">
+      <a href="#" onclick="showImages('all')">All</a>
+      <a href="#" onclick="showImages('app')">App</a>
+      <a href="#" onclick="showImages('card')">Card</a>
+      <a href="#" onclick="showImages('web')">Web</a>
+    </div>
+    <div class="image-container" id="all-images">
+      <img src="app_image1.jpg" alt="App Image 1" />
+      <img src="app_image2.jpg" alt="App Image 2" />
+      <img src="app_image2.jpg" alt="App Image 3" />
+      <img src="card_image1.jpg" alt="Card Image 1" />
+      <img src="card_image2.jpg" alt="Card Image 2" />
+      <img src="card_image2.jpg" alt="Card Image 3" />
+      <img src="web_image1.jpg" alt="Web Image 1" />
+      <img src="web_image2.jpg" alt="Web Image 2" />
+      <img src="web_image3.jpg" alt="Web Image 3" />
+    </div>
+    <div class="image-container" id="app-images">
+      <!-- <img src="app_image1.jpg" alt="App Image 1" />
+      <img src="app_image2.jpg" alt="App Image 2" />
+      <img src="app_image2.jpg" alt="App Image 3" /> -->
+      <div class="card" style="width: 18rem">
+        <figure>
+          <img src="https://picsum.photos/id/287/250/300" alt="Mountains" />
+          <figcaption>The Day</figcaption>
+        </figure>
+      </div>
+      <div class="card" style="width: 18rem">
+        <figure>
+          <img src="https://picsum.photos/id/287/250/300" alt="Mountains" />
+          <figcaption>The Day</figcaption>
+        </figure>
+      </div>
+      <div class="card" style="width: 18rem">
+        <figure>
+          <img src="https://picsum.photos/id/287/250/300" alt="Mountains" />
+          <figcaption>The Day</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="image-container" id="card-images">
+      <img src="card_image1.jpg" alt="Card Image 1" />
+      <img src="card_image2.jpg" alt="Card Image 2" />
+      <img src="card_image2.jpg" alt="Card Image 3" />
+    </div>
+    <div class="image-container" id="web-images">
+      <img src="web_image1.jpg" alt="Web Image 1" />
+      <img src="web_image2.jpg" alt="Web Image 2" />
+      <img src="web_image3.jpg" alt="Web Image 3" />
+    </div>
+
+    <script>
+      function showImages(category) {
+        // Hide all image containers
+        const containers = document.querySelectorAll(".image-container");
+        containers.forEach((container) => {
+          container.style.display = "none";
+        });
+
+        // Show the selected category's image container
+        const selectedContainer = document.getElementById(category + "-images");
+        if (selectedContainer) {
+          selectedContainer.style.display = "block";
+        }
+      }
+
+      // Show all images by default
+      showImages("all");
+    </script>
+  </body>
+</html>
