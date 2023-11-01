@@ -1,4 +1,8 @@
-function showImages(category) {
+function showImages(category, event) {
+  if (event) {
+    event.preventDefault(); // Prevent the default link behavior
+  }
+
   // Hide all image containers
   const containers = document.querySelectorAll(".image-container");
   containers.forEach((container) => {
@@ -11,6 +15,3 @@ function showImages(category) {
     selectedContainer.style.display = "block";
   }
 }
-
-// Show all images by default
-showImages("all");
