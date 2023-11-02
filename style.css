@@ -263,7 +263,7 @@ a {
 /* portfolio */
 .portfolio {
   width: 100%;
-  height: 80vh;
+  height: auto;
 }
 /* card */
 * {
@@ -390,3 +390,4 @@ body {
 .image_section {
   padding-bottom: 20px;
 }
+/* end of portfolio section  */
