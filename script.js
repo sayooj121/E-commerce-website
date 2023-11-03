@@ -15,3 +15,14 @@ function showImages(category, event) {
     selectedContainer.style.display = "block";
   }
 }
+// accordain
+function toggleSection(sectionNumber) {
+  var section = document.getElementsByClassName("section")[sectionNumber - 1];
+  var content = section.getElementsByClassName("section-content")[0];
+
+  if (content.style.display === "block") {
+    content.style.display = "none";
+  } else {
+    content.style.display = "block";
+  }
+}

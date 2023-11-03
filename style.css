@@ -391,3 +391,50 @@ body {
   padding-bottom: 20px;
 }
 /* end of portfolio section  */
+.qns {
+  height: 90vh;
+  width: 100%;
+  background: #fef8f5;
+}
+/* accordian */
+
+.accordion-container {
+  width: 100%;
+  background-color: #fef8f5;
+}
+
+.accordion {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section {
+  border-bottom: 1px solid #ddd;
+  /* margin: 10px; */
+  border-radius: 5px;
+}
+
+.section-title {
+  background-color: #fef8f5;
+  color: black;
+  padding: 20px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-content {
+  display: none;
+  padding: 10px;
+}
+.section-title:hover {
+  color: #ef7f4d;
+}
